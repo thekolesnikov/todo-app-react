@@ -1,0 +1,100 @@
+* {
+    font-size: 20px;
+}
+
+.App {
+    padding: 100px;
+}
+
+form {
+    display: flex;
+    gap: 100px;
+    margin-bottom: 150px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#title_input,
+#description_input {
+    outline: solid black;
+    min-width: 300px;
+}
+
+.form_button {
+    outline: solid black;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.tasklist_header {
+    display: inline-flex;
+    margin-bottom: 30px;
+    align-items: center;
+    background-color: rgb(251, 243, 243);
+}
+
+.tasklist_header_title,
+.task_title {
+    width: 250px;
+    text-align: center;
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+.task {
+    cursor: pointer;
+    display: inline-flex;
+    margin-bottom: 15px;
+    align-items: center;
+    background-color: rgb(160, 154, 154);
+}
+
+.modal_wrapper {
+    position: fixed;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: -100px;
+    width: 120%;
+    height: 100%;
+    transition: all 0.2s ease;
+}
+
+.modal {
+    padding: 25px 30px;
+    position: absolute;
+    background-color: rgb(242, 234, 223);
+    min-height: 300px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 300px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.modal_title {
+    text-align: center;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+.modal_description {
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+.modal_status {
+    margin-bottom: 15px;
+}
+
+.input_error {
+    position: absolute;
+    margin-top: 3px;
+    color: red;
+    font-size: 16px;
+}
